@@ -1,3 +1,4 @@
+/*================= CSS VARIABLES =================*/
 :root{
   --blue:#00b8b8;
   --black:#333;
@@ -5,9 +6,10 @@
   --light-color:#666;
   --light-bg:#eee;
   --border:.2rem solid rgba(0,0,0,.1);
-  --box-shadow:0 .5rem 1rem rgba(0,0,0.1);
+  --box-shadow:0 .5rem 1rem rgba(0,0,0,.1);
 }
 
+/*================= CONSTANT STYLES =================*/
 *{
   margin: 0; padding: 0;
   box-sizing: border-box;
@@ -37,6 +39,12 @@ html{
   scroll-padding-top: 6.5rem;
 }
 
+section{
+  padding: 7rem 2rem;
+}
+
+
+/*================= NAVBAR =================*/
 .link-btn{
   display: inline-block;
   padding:1rem 3rem;
@@ -55,6 +63,12 @@ html{
 .header{
   padding: 2rem;
   border-bottom: var(--border);
+}
+
+.header.active{
+  background-color: var(--white);
+  box-shadow: var(--box-shadow);
+  border: 0;
 }
 
 .header .logo{
@@ -80,7 +94,31 @@ html{
   font-size: 2.5rem;
   color: var(--black);
   cursor: pointer;
-  /* display: none; */
+  display: none;
+}
+
+/*================= HOME =================*/
+.home{
+  background: url(../img/home.png);
+  background-size: cover;
+  background-position: center;
+}
+
+.home .content{
+  width: 55rem;
+}
+
+.home .content h3{
+  font-size: 6rem;
+  text-transform: uppercase;
+  color: var(--black);
+}
+
+.home .content p{
+  line-height: 2;
+  font-size: 1.5rem;
+  color: var(--light-color);
+  padding: 1rem 0;
 }
 
 
@@ -90,12 +128,14 @@ html{
 
 
 
+/*================= RIGHT TO LEFT VARIABLES =================*/
+  .rtl {
+    text-align: right;
+  } 
 
-
-
-
-
-
+  .ltr {
+    text-align: left;
+  }
 /*================= MEDIA QUERIES =================*/
 /* FOR LARGE DEVICES */
 @media screen and (max-width: 991px) {
@@ -107,12 +147,20 @@ html{
   .header .link-btn{
     display: none;
   }
+
+  section{
+    padding: 5rem 2rem;
+  }
+
 }
 
 
 /* FOR MEDIUM DEVICES */
 @media screen and (max-width: 768px) {
   
+  section{
+    padding: 3rem 1rem;
+  }
   
   #menu-btn{
     display: inline-block;
@@ -145,6 +193,17 @@ html{
     margin: 1rem 0;
     font-size: 2rem;
   }
+
+
+  .home{
+    background-position: left;
+  }
+
+  .home .content{
+    width: auto;
+  }
+  
+ 
   
 }
 
@@ -153,6 +212,10 @@ html{
  
   html{
     font-size: 50%;
+  }
+
+  .home .content h3{
+    font-size: 4rem;
   }
 
 }
