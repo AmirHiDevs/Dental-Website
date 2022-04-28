@@ -43,6 +43,14 @@ section{
   padding: 7rem 2rem;
 }
 
+.heading{
+  text-align: center;
+  font-size: 4rem;
+  color: var(--black);
+  text-transform: uppercase;
+  font-weight: bolder;
+  margin-bottom: 3rem;
+}
 
 /*================= NAVBAR =================*/
 .link-btn{
@@ -143,11 +151,41 @@ section{
   color: var(--light-color);
   line-height: 2;
 }
+/*================= SERVICES =================*/
+.services{
+  background-color: var(--light-bg);
+}
 
+.services .box-container{
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(30rem,1fr));
+  gap:2rem
+}
 
+.services .box-container .box{
+  text-align: center;
+  padding: 2rem;
+  background-color: var(--white);
+  box-shadow: var(--box-shadow);
+  border-radius: .5rem;
+}
 
+.services .box-container .box img{
+  font-size: 2rem;
+  height: 6rem;
+}
 
+.services .box-container .box h3{
+  font-size: 2rem;
+  padding: 1rem 0;
+  color: var(--black);
+}
 
+.services .box-container .box p{
+  font-size: 1.5rem;
+  color: var(--light-color);
+  line-height: 2;
+}
 
 
 /*================= RIGHT TO LEFT VARIABLES =================*/
@@ -240,4 +278,7 @@ section{
     font-size: 4rem;
   }
 
+  .heading{
+    font-size: 3rem;
+  }
 }
