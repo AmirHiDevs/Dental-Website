@@ -121,6 +121,28 @@ section{
   padding: 1rem 0;
 }
 
+/*================= ABOUT =================*/
+.about .row{
+  min-height: 50vh;
+}
+
+.about .content span{
+  font-size: 2rem;
+  color: var(--blue);
+}
+
+.about .content h3{
+  font-size: 3rem;
+  color: var(--black);
+  margin-top: 1rem;
+}
+
+.about .content p{
+  padding: 1rem;
+  font-size: 1.4 rem;
+  color: var(--light-color);
+  line-height: 2;
+}
 
 
 
