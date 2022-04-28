@@ -1,49 +1,51 @@
 /*================= CSS VARIABLES =================*/
-:root{
-  --blue:#00b8b8;
-  --black:#333;
-  --white:#fff;
-  --light-color:#666;
-  --light-bg:#eee;
-  --border:.2rem solid rgba(0,0,0,.1);
-  --box-shadow:0 .5rem 1rem rgba(0,0,0,.1);
+:root {
+  --blue: #00b8b8;
+  --black: #333;
+  --white: #fff;
+  --light-color: #666;
+  --light-bg: #eee;
+  --border: .2rem solid rgba(0, 0, 0, .1);
+  --box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
 }
 
 /*================= CONSTANT STYLES =================*/
-*{
-  margin: 0; padding: 0;
+* {
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
-  outline: none; border:none;
+  outline: none;
+  border: none;
   text-decoration: none !important;
   text-transform: capitalize;
   font-family: "Koodak", sans-serif;
 }
 
-*::-webkit-scrollbar{
+*::-webkit-scrollbar {
   height: .5rem;
   width: 1rem;
 }
 
-*::-webkit-scrollbar-track{
+*::-webkit-scrollbar-track {
   background-color: transparent;
 }
 
-*::-webkit-scrollbar-thumb{
+*::-webkit-scrollbar-thumb {
   background-color: var(--blue);
 }
 
-html{
+html {
   font-size: 62.5%;
   overflow-x: hidden;
   scroll-behavior: smooth;
   scroll-padding-top: 6.5rem;
 }
 
-section{
+section {
   padding: 7rem 2rem;
 }
 
-.heading{
+.heading {
   text-align: center;
   font-size: 4rem;
   color: var(--black);
@@ -53,9 +55,9 @@ section{
 }
 
 /*================= NAVBAR =================*/
-.link-btn{
+.link-btn {
   display: inline-block;
-  padding:1rem 3rem;
+  padding: 1rem 3rem;
   border-radius: .5rem;
   background-color: var(--blue);
   cursor: pointer;
@@ -63,42 +65,42 @@ section{
   color: var(--white);
 }
 
-.link-btn:hover{
+.link-btn:hover {
   background-color: var(--black);
   color: var(--white);
 }
 
-.header{
+.header {
   padding: 2rem;
   border-bottom: var(--border);
 }
 
-.header.active{
+.header.active {
   background-color: var(--white);
   box-shadow: var(--box-shadow);
   border: 0;
 }
 
-.header .logo{
+.header .logo {
   font-size: 2rem;
-  color:var(--black);
+  color: var(--black);
 }
 
-.header .logo span{
+.header .logo span {
   color: var(--blue);
 }
 
-.header .nav a{
+.header .nav a {
   margin: 0 1.25rem;
   font-size: 1.7rem;
   color: var(--black);
 }
 
-.header .nav a:hover{
-  color:var(--blue);
+.header .nav a:hover {
+  color: var(--blue);
 }
 
-#menu-btn{
+#menu-btn {
   font-size: 2.5rem;
   color: var(--black);
   cursor: pointer;
@@ -106,23 +108,23 @@ section{
 }
 
 /*================= HOME =================*/
-.home{
+.home {
   background: url(../img/home.png);
   background-size: cover;
   background-position: center;
 }
 
-.home .content{
+.home .content {
   width: 55rem;
 }
 
-.home .content h3{
+.home .content h3 {
   font-size: 6rem;
   text-transform: uppercase;
   color: var(--black);
 }
 
-.home .content p{
+.home .content p {
   line-height: 2;
   font-size: 1.5rem;
   color: var(--light-color);
@@ -130,39 +132,40 @@ section{
 }
 
 /*================= ABOUT =================*/
-.about .row{
+.about .row {
   min-height: 50vh;
 }
 
-.about .content span{
+.about .content span {
   font-size: 2rem;
   color: var(--blue);
 }
 
-.about .content h3{
+.about .content h3 {
   font-size: 3rem;
   color: var(--black);
   margin-top: 1rem;
 }
 
-.about .content p{
+.about .content p {
   padding: 1rem;
   font-size: 1.4 rem;
   color: var(--light-color);
   line-height: 2;
 }
+
 /*================= SERVICES =================*/
-.services{
+.services {
   background-color: var(--light-bg);
 }
 
-.services .box-container{
+.services .box-container {
   display: grid;
-  grid-template-columns: repeat(auto-fit,minmax(30rem,1fr));
-  gap:2rem
+  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+  gap: 2rem
 }
 
-.services .box-container .box{
+.services .box-container .box {
   text-align: center;
   padding: 2rem;
   background-color: var(--white);
@@ -170,64 +173,116 @@ section{
   border-radius: .5rem;
 }
 
-.services .box-container .box img{
+.services .box-container .box img {
   font-size: 2rem;
   height: 6rem;
 }
 
-.services .box-container .box h3{
+.services .box-container .box h3 {
   font-size: 2rem;
   padding: 1rem 0;
   color: var(--black);
 }
 
-.services .box-container .box p{
+.services .box-container .box p {
   font-size: 1.5rem;
   color: var(--light-color);
   line-height: 2;
 }
+
 /*================= ARTICLES =================*/
-.articles .box-container{
+.articles .box-container {
   display: grid;
-  grid-template-columns: repeat(auto-fit,minmax(30rem,1fr));
-  gap:2rem
+  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+  gap: 2rem
 }
 
-.articles .box-container .box{
+.articles .box-container .box {
   background-color: #7da3d6;
+  padding: 2rem;
+  cursor: pointer;
+  border-radius: .5rem;
+  text-align: center;
+  box-shadow: var(--box-shadow);
+}
+
+.articles .box-container .box:hover {
+  background-color: var(--black);
+  color: var(--white);
+}
+
+.articles .box-container .box img {
+  height: 20rem;
+  margin: 1rem 0;
+}
+
+.articles .box-container .box h3 {
+  font-size: 2rem;
+  color: var(--white);
+  margin: 1.5rem 0;
+}
+
+.articles .box-container .box p {
+  font-size: 1.5rem;
+  color: var(--white);
+  line-height: 2;
+}
+
+/*================= COMMENTS =================*/
+.comments {
+  background-color: var(--light-bg);
+}
+
+.comments .box-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+  gap: 2rem
+}
+
+.comments .box-container .box {
+  background-color: var(--white);
   padding: 2rem;
   border-radius: .5rem;
   text-align: center;
   box-shadow: var(--box-shadow);
 }
 
-.articles .box-container .box img{
-  height: 20rem;
-  margin:1rem 0;
+.comments .box-container .box img {
+  height: 10rem;
+  width: 10rem;
+  border-radius: 50%;
 }
 
-.articles .box-container .box h3{
+.comments .box-container .box h3 {
   font-size: 2rem;
-  color: var(--white);
-  margin: 1.5rem 0;
+  color: var(--black);
 }
 
-.articles .box-container .box p{
+.comments .box-container .box span {
+  color: var(--light-color);
   font-size: 1.5rem;
-  color: var(--white);
-  line-height: 2;
 }
-/*================= COMMENTS =================*/
 
+.comments .box-container .box p {
+  padding: 2rem 0;
+  line-height: 2;
+  font-size: 1.5rem;
+  color: var(--light-color);
+  margin-bottom: 0;
+}
 
+.comments .box-container .box .stars {
+  padding: .5rem 1.5rem;
+  border-radius: .5rem;
+  background-color: var(--light-bg);
+  margin-bottom: 1rem;
+  display: inline-block;
+}
 
-
-
-
-
-
-
-
+.comments .box-container .box .stars i {
+  font-size: 1.5rem;
+  color: var(--blue);
+}
 
 
 
@@ -266,26 +321,27 @@ section{
 
 
 /*================= RIGHT TO LEFT VARIABLES =================*/
-  .rtl {
-    text-align: right;
-  } 
+.rtl {
+  text-align: right;
+}
 
-  .ltr {
-    text-align: left;
-  }
+.ltr {
+  text-align: left;
+}
+
 /*================= MEDIA QUERIES =================*/
 /* FOR LARGE DEVICES */
 @media screen and (max-width: 991px) {
-  
-  html{
+
+  html {
     font-size: 65%;
   }
 
-  .header .link-btn{
+  .header .link-btn {
     display: none;
   }
 
-  section{
+  section {
     padding: 5rem 2rem;
   }
 
@@ -294,31 +350,33 @@ section{
 
 /* FOR MEDIUM DEVICES */
 @media screen and (max-width: 768px) {
-  
-  section{
+
+  section {
     padding: 3rem 1rem;
   }
-  
-  #menu-btn{
+
+  #menu-btn {
     display: inline-block;
     transition: .2s linear;
   }
 
 
-  #menu-btn.uil-times{
+  #menu-btn.uil-times {
     transform: rotate(180deg);
   }
 
-  .header .nav.active{
+  .header .nav.active {
     clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
   }
 
-  .header .nav{
+  .header .nav {
     position: absolute;
-    top: 99%; left: 0; right: 0;
+    top: 99%;
+    left: 0;
+    right: 0;
     background-color: var(--white);
     border-top: var(--border);
-    border-bottom:var(--border);
+    border-bottom: var(--border);
     padding: 1rem 0;
     text-align: center;
     flex-flow: column;
@@ -326,36 +384,36 @@ section{
     transition: .2s linear;
   }
 
-  .header .nav a{
+  .header .nav a {
     margin: 1rem 0;
     font-size: 2rem;
   }
 
 
-  .home{
+  .home {
     background-position: left;
   }
 
-  .home .content{
+  .home .content {
     width: auto;
   }
-  
- 
-  
+
+
+
 }
 
 /* FOR SMALL DEVICES */
 @media screen and (max-width: 450px) {
- 
-  html{
+
+  html {
     font-size: 50%;
   }
 
-  .home .content h3{
+  .home .content h3 {
     font-size: 4rem;
   }
 
-  .heading{
+  .heading {
     font-size: 3rem;
   }
 }
