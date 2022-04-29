@@ -285,7 +285,7 @@ section {
 }
 
 /*================= CONTACT =================*/
-.contact form{
+.contact form {
   border-radius: .5rem;
   background-color: var(--light-bg);
   padding: 2rem;
@@ -293,7 +293,7 @@ section {
   max-width: 50rem;
 }
 
-.contact form .box{
+.contact form .box {
   width: 100%;
   margin-top: 1rem;
   margin-bottom: 2rem;
@@ -305,20 +305,63 @@ section {
   text-transform: none;
 }
 
-.contact form  span{
+.contact form span {
   font-size: 1.7rem;
   color: var(--black);
 }
 
+/*================= FOOTER =================*/
 
+.footer {
+  background-color: var(--light-bg);
+}
 
+.footer .box-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+  gap: 3rem
+}
 
+.footer .box-container .box {
+  text-align: center;
+}
 
+.footer .box-container .box i {
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  line-height: 35px;
+  font-size: 20px;
+  display: inline-block;
+  background-color: var(--blue);
+  color: var(--white);
+}
 
+.footer .box-container .box h3 {
+  font-size: 2rem;
+  margin: 2rem 0;
+  color: var(--black);
+}
 
+.footer .box-container .box p {
+  font-size: 1.5rem;
+  color: var(--light-color);
+  text-transform: none;
+}
 
+.footer .credit {
+  text-align: center;
+  border-top: var(--border);
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  margin-top: 2rem;
+  color: var(--light-color);
+  font-size: 2rem;
+}
 
-
+.footer .credit span{
+  color: var(--blue);
+}
 
 
 
