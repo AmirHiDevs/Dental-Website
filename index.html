@@ -12,13 +12,14 @@
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v3.0.1/css/line.css">
     <!--================= CSS =================-->
     <link href="assets/css/dental_styles.css" rel="stylesheet" />
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css" />
     <!--================= BOOTSTRAP =================-->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/4.6.1/css/bootstrap.min.css " rel="stylesheet" />
 </head>
 
 <body>
     <!--================= HEADER =================-->
-    <header class="header fixed-top" id="header">
+    <header class="header fixed-top" id="myheader">
         <div class="container">
             <div class="row align-items-center justify-content-between">
 
@@ -26,15 +27,22 @@
 
                 <a href="home" class="logo" style="font-size: x-large;">دکتر<span>دندان پزشکیان</span></a>
 
-                <nav class="nav">
-                    <a href="#home">صفحه اصلی</a>
+                <div class="nav">
                     <a href="#about">درباره من</a>
                     <a href="#services">خدمات</a>
                     <a href="#articles">مقالات</a>
                     <a href="#comments">نظرات</a>
-                </nav>
+                    <div class="dropdown">
+                        <a href="">بیشتر<i class="uil uil-angle-down"></i></a>
+                        <div class="dropdown-content">
+                            <a href="#home">صفحه اصلی</a>
+                            <a href="#">لینک 2</a>
+                            <a href="#">لینک 3</a>
+                        </div>
+                    </div>
+                </div>
 
-                <a href="#contact" class="link-btn">درخواست ویزیت</a>
+                <a href="#contact" class="reserve-btn">ثبت نوبت</a>
 
 
 
@@ -50,7 +58,7 @@
                     <p>.متن ساختگیمتن ساختگیمتن ساختگیمتن ساختگیمتن ساختگیمتن ساختگیمتن ساختگیمتن ساختگیمتن
                         ساختگیمتن ساختگیمتن ساختگیمتن ساختگیمتن ساختگیمتن ساختگیمتن
                         ساختگیمتن ساختگیمتن ساختگیمتن ساختگیمتن ساختگیمتن ساختگیمتن ساختگی</p>
-                    <a href="#contact" class="link-btn">درخواست ویزیت</a>
+                    <a href="#contact" class="reserve-btn">ثبت نوبت</a>
 
                 </div>
             </div>
@@ -74,7 +82,7 @@
                         متن ساختگیمتن ساختگیمتن ساختگیمتن ساختگیمتن ساختگیمتن ساختگیمتن ساختگیمتن ساختگی
                         متن ساختگیمتن ساختگیساختگیمتن ساختگیمتن ساختگیمتن ساختگیمتن ساختگیمتن ساختگی
                     </p>
-                    <a href="#contact" class="link-btn">درخواست ویزیت</a>
+                    <a href="#contact" class="reserve-btn">ثبت نوبت</a>
 
                 </div>
 
@@ -121,129 +129,164 @@
     <!--================= ARTICLES SECTION =================-->
     <section class="articles" id="articles">
         <h1 class="heading">مقالات</h1>
-        <div class="box-container container">
 
-            <a href="#articles" class="box">
-                <img src="assets/img/article-1.png" alt="">
-                <h3>مقاله 1</h3>
-                <p>متن ساختگیمتن ساختگیمتن ساختگیمتن ساختگیمتن ساختگیمتن ساختگی</p>
-            </a>
-            <a href="#articles" class="box">
-                <img src="assets/img/article-2.png" alt="">
-                <h3>مقاله 2</h3>
-                <p>متن ساختگیمتن ساختگیمتن ساختگیمتن ساختگیمتن ساختگیمتن ساختگی</p>
-            </a>
-            <a href="#articles" class="box">
-                <img src="assets/img/article-3.png" alt="">
-                <h3>مقاله 3</h3>
-                <p>متن ساختگیمتن ساختگیمتن ساختگیمتن ساختگیمتن ساختگیمتن ساختگی</p>
-            </a>
+        <div class="swiper box-container container" id="article">
+            <div class="swiper-wrapper">
+                <div href="#articles" class="box swiper-slide">
+                    <img src="assets/img/article-1.png" alt="">
+                    <h3>مقاله 1</h3>
+                    <p>متن ساختگیمتن ساختگیمتن ساختگیمتن ساختگیمتن ساختگیمتن ساختگی</p>
+                </div>
+                <div href="#articles" class="box swiper-slide">
+                    <img src="assets/img/article-2.png" alt="">
+                    <h3>مقاله 2</h3>
+                    <p>متن ساختگیمتن ساختگیمتن ساختگیمتن ساختگیمتن ساختگیمتن ساختگی</p>
+                </div>
+                <div href="#articles" class="box swiper-slide">
+                    <img src="assets/img/article-3.png" alt="">
+                    <h3>مقاله 3</h3>
+                    <p>متن ساختگیمتن ساختگیمتن ساختگیمتن ساختگیمتن ساختگیمتن ساختگی</p>
+                </div>
+            </div>
+           
+            <div class="swiper-pagination"></div>
         </div>
+
+
     </section>
     <!--================= COMMENTS SECTION =================-->
     <section class="comments" id="comments">
         <h1 class="heading">نظرات</h1>
-        <div class="box-container container">
-            <div class="box">
-                <img src="assets/img/pic-1.png" alt="">
-                <p>متن ساختگیمتن ساختگیمتن ساختگیمتن ساختگیمتن ساختگیمتن ساختگیمتن ساختگی
-                    متن ساختگیمتن ساختگیمتن ساختگیمتن ساختگیمتن ساختگیمتن ساختگی
-                </p>
-                <div class="stars">
-                    <i class="uil uil-star"></i>
-                    <i class="uil uil-star"></i>
-                    <i class="uil uil-star-half-alt"></i>
-                    <i class="uil uil-star-half-alt"></i>
-                    <i class="uil uil-star-half-alt"></i>
+        <div class="swiper container" id="comment">
+            <div class="swiper-wrapper ">
+                <div class="box-container  swiper-slide">
+                    <div class="box">
+                        <img src="assets/img/pic-1.png" alt="">
+                        <p>متن ساختگیمتن ساختگیمتن ساختگیمتن ساختگیمتن ساختگیمتن ساختگیمتن ساختگی
+                            متن ساختگیمتن ساختگیمتن ساختگیمتن ساختگیمتن ساختگیمتن ساختگی
+                        </p>
+                        <div class="stars">
+                            <i class="uil uil-star"></i>
+                            <i class="uil uil-star"></i>
+                            <i class="uil uil-star-half-alt"></i>
+                            <i class="uil uil-star-half-alt"></i>
+                            <i class="uil uil-star-half-alt"></i>
+                        </div>
+                        <h3>امیر جعفری</h3>
+                        <span>مراجعه کننده راضی</span>
+                    </div>
+
+
+                    <div class="box">
+                        <img src="assets/img/pic-2.png" alt="">
+                        <p>متن ساختگیمتن ساختگیمتن ساختگیمتن ساختگیمتن ساختگیمتن ساختگیمتن ساختگی
+                            متن ساختگیمتن ساختگیمتن ساختگیمتن ساختگیمتن ساختگیمتن ساختگی
+                        </p>
+                        <div class="stars">
+                            <i class="uil uil-star-half-alt"></i>
+                            <i class="uil uil-star-half-alt"></i>
+                            <i class="uil uil-star-half-alt"></i>
+                            <i class="uil uil-star-half-alt"></i>
+                            <i class="uil uil-star-half-alt"></i>
+                        </div>
+                        <h3>بهرام افشاری</h3>
+                        <span>مراجعه کننده راضی</span>
+                    </div>
+
                 </div>
-                <h3>امیر جعفری</h3>
-                <span>مراجعه کننده راضی</span>
+                <div class="box-container  swiper-slide">
+                  
+
+                    <div class="box">
+                        <img src="assets/img/pic-2.png" alt="">
+                        <p>متن ساختگیمتن ساختگیمتن ساختگیمتن ساختگیمتن ساختگیمتن ساختگیمتن ساختگی
+                            متن ساختگیمتن ساختگیمتن ساختگیمتن ساختگیمتن ساختگیمتن ساختگی
+                        </p>
+                        <div class="stars">
+                            <i class="uil uil-star-half-alt"></i>
+                            <i class="uil uil-star-half-alt"></i>
+                            <i class="uil uil-star-half-alt"></i>
+                            <i class="uil uil-star-half-alt"></i>
+                            <i class="uil uil-star-half-alt"></i>
+                        </div>
+                        <h3>بهرام افشاری</h3>
+                        <span>مراجعه کننده راضی</span>
+                    </div>
+
+
+                    <div class="box">
+                        <img src="assets/img/pic-3.png" alt="">
+                        <p>متن ساختگیمتن ساختگیمتن ساختگیمتن ساختگیمتن ساختگیمتن ساختگیمتن ساختگی
+                            متن ساختگیمتن ساختگیمتن ساختگیمتن ساختگیمتن ساختگیمتن ساختگی
+                        </p>
+                        <div class="stars">
+                            <i class="uil uil-star"></i>
+                            <i class="uil uil-star-half-alt"></i>
+                            <i class="uil uil-star-half-alt"></i>
+                            <i class="uil uil-star-half-alt"></i>
+                            <i class="uil uil-star-half-alt"></i>
+                        </div>
+                        <h3>محسن تنابنده</h3>
+                        <span>مراجعه کننده راضی</span>
+                    </div>
+                </div>
             </div>
+        </div>
+    </section>
+    <!--================= MAP SECTION =================-->
+    <section class="container rtl">
+        <div class="contact-wrap">
+            <div class="contact-in">
+                <h2><i class="uil uil-phone"></i> شماره تماس</h2>
+                <p>09127654321</p>
+                <p>09179876543</p>
+                <h2><i class="uil uil-envelope"></i> نشانی ایمیل</h2>
+                <p>example@email.com</p>
+                <h2><i class="uil uil-clock"></i> ساعات کار</h2>
+                <p>7 صبح تا 10 شب</p>
+                <h2><i class="uil uil-map-marker-alt"></i> آدرس کلینیک</h2>
+                <p>ایران - تهران</p>
 
-
-            <div class="box">
-                <img src="assets/img/pic-2.png" alt="">
-                <p>متن ساختگیمتن ساختگیمتن ساختگیمتن ساختگیمتن ساختگیمتن ساختگیمتن ساختگی
-                    متن ساختگیمتن ساختگیمتن ساختگیمتن ساختگیمتن ساختگیمتن ساختگی
-                </p>
-                <div class="stars">
-                    <i class="uil uil-star-half-alt"></i>
-                    <i class="uil uil-star-half-alt"></i>
-                    <i class="uil uil-star-half-alt"></i>
-                    <i class="uil uil-star-half-alt"></i>
-                    <i class="uil uil-star-half-alt"></i>
-                </div>
-                <h3>بهرام افشاری</h3>
-                <span>مراجعه کننده راضی</span>
+                <ul>
+                    <li><a href="#"><i class="uil uil-facebook" aria-hidden="true"></i></a></li>
+                    <li><a href="#"><i class="uil uil-instagram" aria-hidden="true"></i></a></li>
+                    <li><a href="#"><i class="uil uil-youtube" aria-hidden="true"></i></a></li>
+                    <li><a href="#"><i class="uil uil-linkedin" aria-hidden="true"></i></a></li>
+                </ul>
             </div>
-
-
-            <div class="box">
-                <img src="assets/img/pic-3.png" alt="">
-                <p>متن ساختگیمتن ساختگیمتن ساختگیمتن ساختگیمتن ساختگیمتن ساختگیمتن ساختگی
-                    متن ساختگیمتن ساختگیمتن ساختگیمتن ساختگیمتن ساختگیمتن ساختگی
-                </p>
-                <div class="stars">
-                    <i class="uil uil-star"></i>
-                    <i class="uil uil-star-half-alt"></i>
-                    <i class="uil uil-star-half-alt"></i>
-                    <i class="uil uil-star-half-alt"></i>
-                    <i class="uil uil-star-half-alt"></i>
-                </div>
-                <h3>محسن تنابنده</h3>
-                <span>مراجعه کننده راضی</span>
+            <div class="contact-in">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d207371.97795009098!2d51.20973569228776!3d35.69701178432476!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3f8e00491ff3dcd9%3A0xf0b3697c567024bc!2sTehran%2C%20Tehran%20Province%2C%20Iran!5e0!3m2!1sen!2s!4v1651394495166!5m2!1sen!2s"
+                    width="100%" height="auto" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
         </div>
     </section>
     <!--================= CONTACT SECTION =================-->
     <section class="contact rtl" id="contact">
         <h1 class="heading">ارتباط با من</h1>
-            <form action="" method="post">
-                <span>نام و نام خانوادگی</span>
-                <input type="text" name="fullname" placeholder="مثال: حامد آهنگی" class="box">
-                <span>ایمیل</span>
-                <input type="email" name="email" placeholder="example@example.com" class="box">
-                <span>تلفن همراه</span>
-                <input type="number" name="number" placeholder="مثال: 09171234567" class="box">
-                <span>تاریخ ویزیت</span>
-                <input type="datetime-local" name="date" class="box">
-                <input type="submit" value="درخواست ویزیت" name="submit" class="link-btn">
-            </form>
-    </section>
-    <!--================= FOOTER SECTION =================-->
-    <section class="footer">
-        <div class="box-container container">
-            <div class="box">
-                <i class="uil uil-phone"></i>
-                <h3>شماره تماس</h3>
-                <p>021-6123-4567</p>
-                <p>0912-765-4321</p>
-            </div>
+        <form action="" method="post">
+            <span>نام و نام خانوادگی</span>
+            <input type="text" name="fullname" placeholder="مثال: حامد آهنگی" class="box">
+            <span>ایمیل</span>
+            <input type="email" name="email" placeholder="example@example.com" class="box">
+            <span>تلفن همراه</span>
+            <input type="text" name="number" placeholder="مثال: 09121234567" class="box">
+            <span>پیام شما</span>
+            <textarea name="message" placeholder="درخواست خود را اینجا بنویسید" class="text-box" id="" cols="30"
+                rows="10"></textarea>
+            <input type="submit" value="ارسال پیام" name="submit" class="send-btn">
+        </form>
 
-            <div class="box">
-                <i class="uil uil-map-marker-alt"></i>
-                <h3>آدرس کلینیک</h3>
-                <p>Iran-Tehran</p>
-            </div>
-
-            <div class="box">
-                <i class="uil uil-clock"></i>
-                <h3>ساعات کار</h3>
-                <p>7 صبح تا 10 شب</p>
-            </div>
-
-            <div class="box">
-                <i class="uil uil-envelope"></i>
-                <h3>نشانی ایمیل</h3>
-                <p>example@email.com</p>
-            </div>
-        </div>
-        
-        <div class="credit">     طراحی شده توسط<span>   Man.Of.Code  &copy; </span>   </div>
+        <div class="credit"> طراحی شده توسط<span> Man.Of.Code &copy; </span> </div>
     </section>
 </body>
-
-
+<script src="assets/js/swiper-bundle.min.js"></script>
 <script src="assets/js/scripts.js"></script>
+
+
+<script>
+
+</script>
 
 </html>
