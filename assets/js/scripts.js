@@ -28,16 +28,34 @@ langEn.onclick = ()=> {
     langEn.classList.toggle('ltr')
 }
 
-/*================= CALENDER CONVERTER =================*/
-
-
-
-
-
-
-
-/*================= MAP =================*/
-
+/*================= SWIPER ARTICLE =================*/
+ var swiperArticle = new Swiper("#article", {
+    effect: "coverflow",
+    grabCursor: true,
+    centeredSlides: true,
+    slidesPerView: "auto",
+    loop: true,
+    coverflowEffect: {
+      rotate: 75,
+      stretch: 0,
+      depth: 100,
+      modifier: 1,
+      slideShadows: true,
+    },
+    pagination: {
+      el: ".swiper-pagination",
+    },
+  });
+/*================= SWIPER COMMENT =================*/
+var swiperComment = new Swiper("#comment", {
+    spaceBetween: 60,
+    centeredSlides: true,
+    loop: true,
+    autoplay: {
+      delay: 10000,
+      disableOnInteraction: false,
+    },
+  });
 
 
 
