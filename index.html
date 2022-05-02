@@ -18,7 +18,7 @@
 
 <body>
     <!--================= HEADER =================-->
-    <header class="header fixed-top" id="header">
+    <header class="header fixed-top" id="myheader">
         <div class="container">
             <div class="row align-items-center justify-content-between">
 
@@ -26,15 +26,22 @@
 
                 <a href="home" class="logo" style="font-size: x-large;">دکتر<span>دندان پزشکیان</span></a>
 
-                <nav class="nav">
-                    <a href="#home">صفحه اصلی</a>
+                <div class="nav">
                     <a href="#about">درباره من</a>
                     <a href="#services">خدمات</a>
                     <a href="#articles">مقالات</a>
                     <a href="#comments">نظرات</a>
-                </nav>
+                    <div class="dropdown">
+                        <a href="">بیشتر<i class="uil uil-angle-down"></i></a>
+                        <div class="dropdown-content">
+                            <a href="#home">صفحه اصلی</a>
+                            <a href="#">لینک 2</a>
+                            <a href="#">لینک 3</a>
+                        </div>
+                    </div>
+                </div>
 
-                <a href="#contact" class="link-btn">درخواست ویزیت</a>
+                <a href="#contact" class="reserve-btn">ثبت نوبت</a>
 
 
 
@@ -50,7 +57,7 @@
                     <p>.متن ساختگیمتن ساختگیمتن ساختگیمتن ساختگیمتن ساختگیمتن ساختگیمتن ساختگیمتن ساختگیمتن
                         ساختگیمتن ساختگیمتن ساختگیمتن ساختگیمتن ساختگیمتن ساختگیمتن
                         ساختگیمتن ساختگیمتن ساختگیمتن ساختگیمتن ساختگیمتن ساختگیمتن ساختگی</p>
-                    <a href="#contact" class="link-btn">درخواست ویزیت</a>
+                    <a href="#contact" class="reserve-btn">ثبت نوبت</a>
 
                 </div>
             </div>
@@ -74,7 +81,7 @@
                         متن ساختگیمتن ساختگیمتن ساختگیمتن ساختگیمتن ساختگیمتن ساختگیمتن ساختگیمتن ساختگی
                         متن ساختگیمتن ساختگیساختگیمتن ساختگیمتن ساختگیمتن ساختگیمتن ساختگیمتن ساختگی
                     </p>
-                    <a href="#contact" class="link-btn">درخواست ویزیت</a>
+                    <a href="#contact" class="reserve-btn">ثبت نوبت</a>
 
                 </div>
 
@@ -199,14 +206,14 @@
     <section class="container rtl">
         <div class="contact-wrap">
             <div class="contact-in">
-                <h2><i class="uil uil-phone"></i>   شماره تماس</h2>
+                <h2><i class="uil uil-phone"></i> شماره تماس</h2>
                 <p>09127654321</p>
                 <p>09179876543</p>
-                <h2><i class="uil uil-envelope"></i>  نشانی ایمیل</h2>
+                <h2><i class="uil uil-envelope"></i> نشانی ایمیل</h2>
                 <p>example@email.com</p>
-                <h2><i class="uil uil-clock"></i>  ساعات کار</h2>
+                <h2><i class="uil uil-clock"></i> ساعات کار</h2>
                 <p>7 صبح تا 10 شب</p>
-                <h2><i class="uil uil-map-marker-alt"></i>   آدرس کلینیک</h2>
+                <h2><i class="uil uil-map-marker-alt"></i> آدرس کلینیک</h2>
                 <p>ایران - تهران</p>
 
                 <ul>
@@ -216,15 +223,18 @@
                     <li><a href="#"><i class="uil uil-linkedin" aria-hidden="true"></i></a></li>
                 </ul>
             </div>
-             <div class="contact-in">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d207371.97795009098!2d51.20973569228776!3d35.69701178432476!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3f8e00491ff3dcd9%3A0xf0b3697c567024bc!2sTehran%2C%20Tehran%20Province%2C%20Iran!5e0!3m2!1sen!2s!4v1651394495166!5m2!1sen!2s" width="100%" height="auto" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <div class="contact-in">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d207371.97795009098!2d51.20973569228776!3d35.69701178432476!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3f8e00491ff3dcd9%3A0xf0b3697c567024bc!2sTehran%2C%20Tehran%20Province%2C%20Iran!5e0!3m2!1sen!2s!4v1651394495166!5m2!1sen!2s"
+                    width="100%" height="auto" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
         </div>
     </section>
-     <!--================= CONTACT SECTION =================-->
-     <section class="contact rtl" id="contact">
+    <!--================= CONTACT SECTION =================-->
+    <section class="contact rtl" id="contact">
         <h1 class="heading">ارتباط با من</h1>
-        <form action=""  method="post">
+        <form action="" method="post">
             <span>نام و نام خانوادگی</span>
             <input type="text" name="fullname" placeholder="مثال: حامد آهنگی" class="box">
             <span>ایمیل</span>
@@ -234,13 +244,12 @@
             <span>پیام شما</span>
             <textarea name="message" placeholder="درخواست خود را اینجا بنویسید" class="text-box" id="" cols="30"
                 rows="10"></textarea>
-            <input type="submit" value="ارسال پیام" name="submit" class="send-btn" >
+            <input type="submit" value="ارسال پیام" name="submit" class="send-btn">
         </form>
-        
+
         <div class="credit"> طراحی شده توسط<span> Man.Of.Code &copy; </span> </div>
     </section>
 </body>
-
 
 <script src="assets/js/scripts.js"></script>
 
