@@ -17,6 +17,6 @@
   },
   "homepage": "https://github.com/man0fcode/Dental-Website#readme",
   "dependencies": {
-
+    "faker": "^5.5.3"
   }
 }
